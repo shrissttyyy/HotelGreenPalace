@@ -15,6 +15,13 @@ app.get("/blog",(req, res) => {
     });
 });
 
+
+app.post("/blog",(req, res) => {
+    res.status(200).json({
+        msg: "Blog api hit successfully..."
+    });
+});
+
 app.listen(3000, () => {
     console.log("NodeJS project start on port [3000]");
 });
